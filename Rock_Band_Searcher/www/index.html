@@ -29,7 +29,7 @@
 
     </ol>
     <input id="busqueda" type="text" name="newEl"/>
-    <button id ="Boton_Insertar" onclick="BuscarCanciones()"> Add Element </button>
+    <button id ="Boton_Insertar"> Add Element </button>
     <script type="text/javascript">
 		function BuscarCanciones(){
 		 $("#lista_musica").empty();
@@ -49,11 +49,12 @@
 			}else{
 				alert("Datos Encontrados ");
 			}
-			 $(document).ready( function ()  {
-				$("#Boton_Insertar").click(BuscarCanciones);
-			});
+			
          });
 		 }
+		  $(document).ready( function ()  {
+				$("#Boton_Insertar").click(BuscarCanciones);
+		});
     </script>
   </body>
 </html>
