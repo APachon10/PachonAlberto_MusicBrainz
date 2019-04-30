@@ -44,6 +44,7 @@
 			}
 			$("#busqueda").val(" ");
 			
+			<!-- Avisamos al Usuario si ha encontrado Datos o no , si lo encuentra añade los elementos a la lista si no no -->
 			if(busqueda_canciones.artists.length == 0){
 				alert("Ningun Dato Encontrado");
 			}else{
@@ -52,6 +53,7 @@
 			
          });
 		 }
+		 <!-- Llamamos a la funcion -->
 		  $(document).ready( function ()  {
 				$('#Boton_Insertar').click(BuscarCanciones);
 		  });
