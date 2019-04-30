@@ -39,7 +39,7 @@
            url: "https://musicbrainz.org/ws/2/artist?query="+nombre_artista,
            dataType: "json",  
          }).done(function (busqueda_canciones) {
-		   for(var key in busqueda_canciones.artists) {
+			for(var key in busqueda_canciones.artists) {
 				$("#lista_musica").append("<li>" + JSON.stringify(busqueda_canciones.artists[key].name)+ "</li>");
 			}
 			$("#busqueda").val(" ");
@@ -53,7 +53,7 @@
 			
          });
 		 }
-		 <!-- Llamamos a la funcion -->
+		 <!-- Llamamos a la funcion , si lo hacemos de esta forma tambien funciona en el movil -->
 		  $(document).ready( function ()  {
 				$('#Boton_Insertar').click(BuscarCanciones);
 		  });
