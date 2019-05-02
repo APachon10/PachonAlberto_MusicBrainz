@@ -6,6 +6,7 @@
         background-color: red;
 		font-size: 25px;
 		color:white;
+		opacity : 0.5;
       }
 	  #Boton_Insertar{
 		background-color : blue;
@@ -14,7 +15,7 @@
 		width: 450px;
 	  }
 	  #busqueda{
-		width: 470px;
+		width: 235px;
 	  }
 	  #cuerpo{
 		background-image : url(http://s7.favim.com/orig/151019/anime-girl-anime-music-anime-anime-girl-brown-hair-Favim.com-3448464.jpg);
@@ -29,7 +30,8 @@
 
     </ol>
     <input id="busqueda" type="text" name="newEl"/>
-    <button id ="Boton_Insertar"> Add Element </button>
+    <button id ="Boton_Artista"> Buscar Artista </button>
+	<button id ="Boton_Canciones"> Buscar Canciones </button>
     <script type="text/javascript">
 		function BuscarCanciones(){
 		 $("#lista_musica").empty();
@@ -55,7 +57,7 @@
 		 }
 		 <!-- Llamamos a la funcion , si lo hacemos de esta forma tambien funciona en el movil -->
 		  $(document).ready( function ()  {
-				$('#Boton_Insertar').click(BuscarCanciones);
+				$('#Boton_Artista').click(BuscarCanciones);
 		  });
     </script>
   </body>
