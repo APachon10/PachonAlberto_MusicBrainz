@@ -8,14 +8,16 @@
 		color:white;
 		opacity : 0.5;
       }
-	  #Boton_Insertar{
+	  #Boton_Artista{
 		background-color : blue;
 		color:white;
 		font-size: 15px;
-		width: 450px;
+		width: 440px;
 	  }
 	  #busqueda{
-		width: 235px;
+		width: 470px;
+		background-color : blue;
+		color:white;
 	  }
 	  #cuerpo{
 		background-image : url(http://s7.favim.com/orig/151019/anime-girl-anime-music-anime-anime-girl-brown-hair-Favim.com-3448464.jpg);
@@ -31,9 +33,8 @@
     </ol>
     <input id="busqueda" type="text" name="newEl"/>
     <button id ="Boton_Artista"> Buscar Artista </button>
-	<button id ="Boton_Canciones"> Buscar Canciones </button>
     <script type="text/javascript">
-		function BuscarCanciones(){
+		function BuscarArtistas(){
 		 $("#lista_musica").empty();
 		 var nombre_artista = $("#busqueda").val();
          $.ajax({
@@ -57,7 +58,7 @@
 		 }
 		 <!-- Llamamos a la funcion , si lo hacemos de esta forma tambien funciona en el movil -->
 		  $(document).ready( function ()  {
-				$('#Boton_Artista').click(BuscarCanciones);
+				$('#Boton_Artista').click(BuscarArtistas);
 		  });
     </script>
   </body>
